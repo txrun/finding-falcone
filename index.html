@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.header-strip
+	{
+		display: flex;
+		justify-content:center;
+	}
+	
+	.links
+	{
+		width: 500px;
+    	display: flex;
+    	justify-content: flex-end;
+	}
+	.descriptor
+	{
+		display: flex;
+		justify-content:center;
+	}
+	.dest-options
+	{
+		display:flex;
+		justify-content:space-around;
+	}	
+	.dest-commute
+	{
+		display: none;
+		/*display: flex;
+		flex-direction:column;*/
+	}
+	.find-button
+	{
+		margin:20px;
+		display: flex;
+		justify-content:center;
+
+	}
+	button
+	{
+		font-size: 18px;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class = "header-strip">
+			<div class="title">
+				<h2>Finding Falcone!</h2>
+			</div>
+			<div class="links">
+				<a href="#">Reset</a>|
+				<a href="#">Geek Trust Home</a>
+			</div>
+		</div>
+		<div class="descriptor">
+			<p>Select planets you want to search in:</p>
+		</div>
+		<div class="dest-options">
+			<div class = "dest-details">
+				<div class="dest-title">
+					Destination 1	
+				</div>
+				<div class = "dest-dropdown">
+					<select id = "drop1">
+						<option value="">Select</option>
+						<option value="DonLon">DonLon</option>
+						<option value="Enchai">Enchai</option>
+						<option value="Jebing">Jebing</option>
+						<option value="Sapir">Sapir</option>
+						<option value="Lerbin">Lerbin</option>
+						<option value="Pingasor">Pingasor</option>
+					</select>
+				</div>
+				<div class="dest-commute" id="pack1">
+					<div>
+						<input type="radio" name="commute" id = "pod" value="pod">
+						<label for="pod">Space Pod(2)</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "rocket" value="rocket">
+						<label for ="rocket">Space Rocket(1)</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "shuttle" value="shuttle">
+						<label for ="shuttle">Space Shuttle(1)</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id="ship" value="ship">
+						<label for="ship">Space Ship(2)</label>
+					</div>
+				</div>
+			</div>
+			<div class = "dest-details">
+				<div class="dest-title">
+					Destination 2	
+				</div>
+				<div class = "dest-dropdown">
+					<select id = "drop2">
+						<option value="">Select</option>
+						<option value="DonLon">DonLon</option>
+						<option value="Enchai">Enchai</option>
+						<option value="Jebing">Jebing</option>
+						<option value="Sapir">Sapir</option>
+						<option value="Lerbin">Lerbin</option>
+						<option value="Pingasor">Pingasor</option>
+					</select>
+				</div>
+				<div class="dest-commute pack2">
+					<div>
+						<input type="radio" name="commute" id = "pod" value="pod">
+						<label for="pod">Space Pod</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "rocket" value="rocket">
+						<label for ="rocket">Space Rocket</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "shuttle" value="shuttle">
+						<label for ="shuttle">Space Shuttle</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id="ship" value="ship">
+						<label for="ship">Space Ship</label>
+					</div>
+				</div>
+			</div>
+			<div class = "dest-details">
+				<div class="dest-title">
+					Destination 3	
+				</div>
+				<div class = "dest-dropdown">
+					<select id = "drop3">
+						<option value="">Select</option>
+						<option value="DonLon">DonLon</option>
+						<option value="Enchai">Enchai</option>
+						<option value="Jebing">Jebing</option>
+						<option value="Sapir">Sapir</option>
+						<option value="Lerbin">Lerbin</option>
+						<option value="Pingasor">Pingasor</option>
+					</select>
+				</div>
+				<div class="dest-commute pack3">
+					<div>
+						<input type="radio" name="commute" id = "pod" value="pod">
+						<label for="pod">Space Pod</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "rocket" value="rocket">
+						<label for ="rocket">Space Rocket</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "shuttle" value="shuttle">
+						<label for ="shuttle">Space Shuttle</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id="ship" value="ship">
+						<label for="ship">Space Ship</label>
+					</div>
+				</div>
+			</div>
+			<div class = "dest-details">
+				<div class="dest-title">
+					Destination 4	
+				</div>
+				<div class = "dest-dropdown">
+					<select id="drop4">
+						<option value="">Select</option>
+						<option value="DonLon">DonLon</option>
+						<option value="Enchai">Enchai</option>
+						<option value="Jebing">Jebing</option>
+						<option value="Sapir">Sapir</option>
+						<option value="Lerbin">Lerbin</option>
+						<option value="Pingasor">Pingasor</option>
+					</select>
+				</div>
+				<div class="dest-commute pack4">
+					<div>
+						<input type="radio" name="commute" id = "pod" value="pod">
+						<label for="pod">Space Pod</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "rocket" value="rocket">
+						<label for ="rocket">Space Rocket</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id = "shuttle" value="shuttle">
+						<label for ="shuttle">Space Shuttle</label>
+					</div>
+					<div>
+						<input type="radio" name="commute" id="ship" value="ship">
+						<label for="ship">Space Ship</label>
+					</div>
+				</div>
+			</div>
+			<div class="time-taken">
+				<p>Time taken : </p>
+				<p style="font-size:25px">secs</p>
+			</div>
+		</div>
+		<div class="find-button">
+			<button type = "button">Find Falcone!</button>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(main);
+
+
+	vehicle_invetory = {
+		space_pod: 2,
+		space_rocket: 1,
+		space_shuttle: 1,
+		space_ship: 2 
+	};
+
+	function main()
+	{
+		console.log('inside main()');
+		$('#drop1').change(function() 
+		{
+			if($('#drop1').val() !== '') 
+			{
+	 			$('#pack1').show();
+			} 
+			else 
+			{
+				$("#pack1").hide("slow");
+			}
+		});
+
+		$('#pod').click(function() 
+		{
+			vehicle_invetory.space_pod -= 1;
+			$('label[for=pod]').html('Space Pod('+ vehicle_invetory.space_pod +')');
+		});
+
+		$("#rocket").click(function() 
+		{
+			vehicle_invetory.space_rocket -=1;
+			$('label[for=rocket]').html('Space Rocket('+ vehicle_invetory.space_rocket+')');
+		});
+
+		$("#shuttle").click(function()
+		{
+			vehicle_invetory.space_shuttle -=1;
+			$('label[for=shuttle]').html('Space Shuttle('+ vehicle_invetory.space_shuttle +')');
+		});
+
+		$("#ship").click(function(){
+			vehicle_invetory.space_ship -=1;
+			$('label[for=ship]').html('Space Ship('+ vehicle_invetory.space_ship +')');
+		});
+
+		$()
+
+	}
+
+
+	// var planets = ["DonLon","Enchai","Jebing","Sapir","Lerbin","Pingasor"];
+
+	// if($("#drop1").val() !== "")
+	// {
+	// 	$(document).ready(function()
+	// 		{
+	// 			$('.dest-commute').show();
+	// 			// $(".dest-commute").css("display","flex");
+	// 			// $(".dest-commute").css("flex-direction","column");
+	// 		});
+	// }
+
+	// $('#drop1').change(function() {
+	// 	console.log('value selected from drop down 1: ' + Math.random());
+	// });
+
+
+// <script>
+// 	var planets = ["London", "Paris", "Singapore", "Kiev", "Rio", "Mumbai"];
+// 	var planetsSelected = [];
+
+// 	function dropDownList(l, cl) {
+// 		l.filter(function(name) {
+// 			return !cl.contains(name);
+// 		});
+// 	}
+
+// 	function selectPlanet(name) {
+// 		if (!planetsSelected.contains(name)) {
+// 			planetsSelected.push(name);
+// 		}
+// 	}
+
+// 	function deselectPlanet(name) {
+// 		if (planetsSelected.contains(name)) {
+// 			planetSelected.remove(name);
+// 		}
+// 	}
+
+// 	var planets = [
+// 	{
+// 		name: "London", selected: true
+// 	},
+// 	{
+// 		name: "Singapore", selected: false
+// 	}
+// 	]
+
+// 	function dL(planets) {
+// 		return _.filter(planets, (p) => !p.selected);
+// 	}
+
+// 	selectPlanet("London");
+// 	dropDownList(planets, planetsSelected);
+// 	selectPlanet("Paris");
+// 	dropDownList(planets, planetSelected);
+// 	deselectPlanet("London");
+// 	dropDownList(planets, planetSelected);
+
+// </script>
+
+
+</script>
+</html>
